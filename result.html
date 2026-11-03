@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Result — PICK ONE</title>
+  <link rel="stylesheet" href="css/global.css" />
+  <link rel="stylesheet" href="css/result.css" />
+</head>
+<body class="bg">
+  <header class="site-header">
+    <div class="brand">
+      <h1 class="logo">PICK ONE.</h1>
+      <nav class="top-nav" aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="profile.html">Profile</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="result" role="main">
+    <section class="reveal">
+      <h2>YOUR RESULT</h2>
+      <h1 id="resultTitle">THE EXPLORER 🧭</h1>
+      <div id="resultArtwork" class="artwork"></div>
+      <p id="resultSummary" class="summary"></p>
+    </section>
+
+    <section class="traits">
+      <h3>Your traits</h3>
+      <div id="traitBars" class="trait-bars"></div>
+    </section>
+
+    <section class="insights">
+      <h3>YOUR MOST INTERESTING CHOICE</h3>
+      <div id="interestingChoice" class="choice-card"></div>
+
+      <h3>STRENGTHS</h3>
+      <ul id="strengthsList" class="strengths"></ul>
+
+      <h3>THINGS TO WATCH</h3>
+      <ul id="watchList" class="watch-list"></ul>
+    </section>
+
+    <div class="result-actions">
+      <button id="shareBtn" class="btn primary">SHARE RESULT</button>
+      <a class="btn ghost" href="modes.html">PLAY AGAIN</a>
+      <a class="btn" href="profile.html">VIEW PROFILE</a>
+    </div>
+
+    <p class="disclaimer">Pick One is designed for entertainment and self-reflection. It is not a scientific psychological assessment or diagnosis.</p>
+  </main>
+
+  <script src="js/personality.js" defer></script>
+  <script src="js/result.js" defer></script>
+  <script src="js/profile.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Game — PICK ONE</title>
+  <link rel="stylesheet" href="css/global.css" />
+  <link rel="stylesheet" href="css/game.css" />
+</head>
+<body class="bg">
+  <header class="game-header">
+    <div class="left">
+      <button id="backBtn" class="icon-btn" aria-label="Back">← Back</button>
+    </div>
+    <div class="center">
+      <h1>PICK ONE</h1>
+    </div>
+    <div class="right">
+      <button id="exitBtn" class="icon-btn" aria-label="Exit">Exit</button>
+    </div>
+  </header>
+
+  <main class="game" role="main" aria-live="polite">
+    <div class="progress-row">
+      <div id="progressText">00 / 00</div>
+      <div class="progress-bar" aria-hidden="true">
+        <div id="progressFill" class="progress-fill"></div>
+      </div>
+    </div>
+
+    <section class="question-area">
+      <h2 id="microcopy">Choose carefully.</h2>
+      <h3 id="questionText" class="question">Loading…</h3>
+
+      <div class="options" id="options">
+        <!-- Option cards inserted by JS -->
+      </div>
+
+      
+    </section>
+  </main>
+
+  <div id="analysisOverlay" class="overlay hidden" role="dialog" aria-modal="true">
+    <div class="overlay-inner">
+      <h2>ANALYZING YOUR CHOICES...</h2>
+      <div id="analysisSteps" class="analysis-steps">
+        <p>Looking for patterns...</p>
+        <p>Comparing your decisions...</p>
+        <p>Mapping your preferences...</p>
+        <p>Almost there...</p>
+      </div>
+      <!-- <div class="overlay-actions">
+        <button id="skipAnalysis" class="btn ghost">Skip</button>
+      </div> -->
+    </div>
+  </div>
+
+  <script src="js/questions.js" defer></script>
+  <script src="js/personality.js" defer></script>
+  <script src="js/game.js" defer></script>
+</body>
+</html>
